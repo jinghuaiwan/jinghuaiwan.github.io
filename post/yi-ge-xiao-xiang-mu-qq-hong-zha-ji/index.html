@@ -1,9 +1,11 @@
+
+<!DOCTYPE html>
 <html>
   <head>
     
 <meta charset="utf-8" >
 
-<title>wan的小站</title>
+<title>一个小项目：qq轰炸机 | wan的小站</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -75,43 +77,67 @@
 </transition>
 
 
-        <div class="content-container">
+      <div class="content-container">
+        <div class="post-detail">
           
-          
+          <h2 class="post-title">一个小项目：qq轰炸机</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-11-05</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://jinghuaiwan.github.io/tag/ULejeOLYp/">
+                    计算机
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>前几天由于需要和许多人进行聊天，所以萌生了写个群发器的想法，但是在学习群发器的过程中，顺手做了个轰炸机。</p>
+<p>源代码：</p>
+<p>#include&lt;stdio.h&gt;<br>
+#include&lt;windows.h&gt;</p>
+<p>int main()<br>
+{<br>
+char name[30] = { 0 };<br>
+printf(&quot;选择轰炸对象\n&quot;);<br>
+scanf_s(&quot;%s&quot;, name,30);<br>
+int times = 0;<br>
+printf(&quot;次数\n&quot;);<br>
+scanf_s(&quot;%d&quot;, &amp;times);</p>
+<pre><code>HWND qqhwnd = FindWindowA(NULL, name);
 
-<div class="archives-container">
-  
-    <h2 class="year">2021</h2>
-    
-      
-        <article class="post">
-          <a href="https://jinghuaiwan.github.io/post/yi-ge-xiao-xiang-mu-qq-hong-zha-ji/">
-            <h2 class="post-title">
-              一个小项目：qq轰炸机
-              <small>2021-11-05</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://jinghuaiwan.github.io/post/test/">
-            <h2 class="post-title">
-              test
-              <small>2021-11-04</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-  
-</div>
 
+for (int i = 0;i &lt; times; i++) 
+{
+	SendMessageA(qqhwnd, WM_PASTE, 0, 0);
+	SendMessageA(qqhwnd, WM_KEYDOWN, VK_RETURN, 0);
+}
 
+return 0;
+</code></pre>
+<p>}</p>
+
+          </div>
         </div>
 
-        <div class="site-footer">
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://jinghuaiwan.github.io/post/test/">
+              <h3 class="post-title">
+                下一篇：test
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
   <div class="slogan">温故而知新</div>
   <div class="social-container">
     
@@ -130,8 +156,8 @@
 </div>
 
 
-      </div>
-      <script type="application/javascript">
+    </div>
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
@@ -147,6 +173,5 @@ var app = new Vue({
 
 
 
-    </div>
   </body>
 </html>

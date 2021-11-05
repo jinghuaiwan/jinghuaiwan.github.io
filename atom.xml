@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jinghuaiwan.github.io</id>
     <title>wan的小站</title>
-    <updated>2021-11-04T13:40:37.490Z</updated>
+    <updated>2021-11-05T02:16:26.282Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jinghuaiwan.github.io"/>
     <link rel="self" href="https://jinghuaiwan.github.io/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://jinghuaiwan.github.io/images/avatar.png</logo>
     <icon>https://jinghuaiwan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, wan的小站</rights>
+    <entry>
+        <title type="html"><![CDATA[一个小项目：qq轰炸机]]></title>
+        <id>https://jinghuaiwan.github.io/post/yi-ge-xiao-xiang-mu-qq-hong-zha-ji/</id>
+        <link href="https://jinghuaiwan.github.io/post/yi-ge-xiao-xiang-mu-qq-hong-zha-ji/">
+        </link>
+        <updated>2021-11-05T02:10:37.000Z</updated>
+        <content type="html"><![CDATA[<p>前几天由于需要和许多人进行聊天，所以萌生了写个群发器的想法，但是在学习群发器的过程中，顺手做了个轰炸机。</p>
+<p>源代码：</p>
+<p>#include&lt;stdio.h&gt;<br>
+#include&lt;windows.h&gt;</p>
+<p>int main()<br>
+{<br>
+char name[30] = { 0 };<br>
+printf(&quot;选择轰炸对象\n&quot;);<br>
+scanf_s(&quot;%s&quot;, name,30);<br>
+int times = 0;<br>
+printf(&quot;次数\n&quot;);<br>
+scanf_s(&quot;%d&quot;, &amp;times);</p>
+<pre><code>HWND qqhwnd = FindWindowA(NULL, name);
+
+
+for (int i = 0;i &lt; times; i++) 
+{
+	SendMessageA(qqhwnd, WM_PASTE, 0, 0);
+	SendMessageA(qqhwnd, WM_KEYDOWN, VK_RETURN, 0);
+}
+
+return 0;
+</code></pre>
+<p>}</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[test]]></title>
         <id>https://jinghuaiwan.github.io/post/test/</id>
