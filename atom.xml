@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jinghuaiwan.github.io</id>
     <title>wan的小站</title>
-    <updated>2021-11-19T14:04:55.941Z</updated>
+    <updated>2021-11-19T14:07:06.870Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jinghuaiwan.github.io"/>
     <link rel="self" href="https://jinghuaiwan.github.io/atom.xml"/>
@@ -21,22 +21,19 @@
 <p>#include&lt;stdio.h&gt;<br>
 #include&lt;windows.h&gt;</p>
 <p>int main()<br>
-{<br>
-char name[30] = { 0 };<br>
-printf(&quot;选择轰炸对象\n&quot;);<br>
-scanf_s(&quot;%s&quot;, name,30);<br>
-int times = 0;<br>
-printf(&quot;次数\n&quot;);<br>
-scanf_s(&quot;%d&quot;, &amp;times);</p>
-<pre><code>HWND qqhwnd = FindWindowA(NULL, name);
-
-
+{</p>
+<pre><code>char name[30] = { 0 };
+printf(&quot;选择轰炸对象\n&quot;);
+scanf_s(&quot;%s&quot;, name,30);
+int times = 0;
+printf(&quot;次数\n&quot;);
+scanf_s(&quot;%d&quot;, &amp;times);
+HWND qqhwnd = FindWindowA(NULL, name);
 for (int i = 0;i &lt; times; i++) 
 {
 	SendMessageA(qqhwnd, WM_PASTE, 0, 0);
 	SendMessageA(qqhwnd, WM_KEYDOWN, VK_RETURN, 0);
 }
-
 return 0;
 </code></pre>
 <p>}</p>

@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://jinghuaiwan.github.io/favicon.ico?v=1637330692191">
+<link rel="shortcut icon" href="https://jinghuaiwan.github.io/favicon.ico?v=1637330813624">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://jinghuaiwan.github.io/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://jinghuaiwan.github.io">
-        <img class="avatar" src="https://jinghuaiwan.github.io/images/avatar.png?v=1637330692191" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://jinghuaiwan.github.io/images/avatar.png?v=1637330813624" alt="" width="32px" height="32px">
       </a>
       <a href="https://jinghuaiwan.github.io">
         <h1 class="site-title">wan的小站</h1>
@@ -101,22 +101,19 @@
 <p>#include&lt;stdio.h&gt;<br>
 #include&lt;windows.h&gt;</p>
 <p>int main()<br>
-{<br>
-char name[30] = { 0 };<br>
-printf(&quot;选择轰炸对象\n&quot;);<br>
-scanf_s(&quot;%s&quot;, name,30);<br>
-int times = 0;<br>
-printf(&quot;次数\n&quot;);<br>
-scanf_s(&quot;%d&quot;, &amp;times);</p>
-<pre><code>HWND qqhwnd = FindWindowA(NULL, name);
-
-
+{</p>
+<pre><code>char name[30] = { 0 };
+printf(&quot;选择轰炸对象\n&quot;);
+scanf_s(&quot;%s&quot;, name,30);
+int times = 0;
+printf(&quot;次数\n&quot;);
+scanf_s(&quot;%d&quot;, &amp;times);
+HWND qqhwnd = FindWindowA(NULL, name);
 for (int i = 0;i &lt; times; i++) 
 {
 	SendMessageA(qqhwnd, WM_PASTE, 0, 0);
 	SendMessageA(qqhwnd, WM_KEYDOWN, VK_RETURN, 0);
 }
-
 return 0;
 </code></pre>
 <p>}</p>
