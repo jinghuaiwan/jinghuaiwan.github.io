@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jinghuaiwan.github.io</id>
     <title>wan的小站</title>
-    <updated>2021-11-11T05:59:11.410Z</updated>
+    <updated>2021-11-19T14:04:55.941Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jinghuaiwan.github.io"/>
     <link rel="self" href="https://jinghuaiwan.github.io/atom.xml"/>
@@ -17,7 +17,7 @@
         </link>
         <updated>2021-11-05T02:10:37.000Z</updated>
         <content type="html"><![CDATA[<p>前几天由于需要和许多人进行聊天，所以萌生了写个群发器的想法，但是在学习群发器的过程中，顺手做了个轰炸机。</p>
-<p>源代码：</p>
+<p>CODE：</p>
 <p>#include&lt;stdio.h&gt;<br>
 #include&lt;windows.h&gt;</p>
 <p>int main()<br>
